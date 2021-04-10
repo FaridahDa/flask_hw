@@ -1,6 +1,6 @@
 from flask import render_template
 
-import app
+from application import app
 
 
 @app.route('/')
@@ -12,3 +12,6 @@ def home():
 def template_base(name):
     return render_template('base.html',name=name,group='Everyone')
 
+@app.route('/about_us')
+def about_us():
+    return render_template('about.html')

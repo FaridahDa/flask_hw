@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block body_content %}
+    <body>
+<header>
+    <div>
+        <h1>All about us</h1>
+    </div>
+    <div align="left">
+        <h3>Read on to find out more about us.</h3>
+    </div>
+</header>
+<nav>
+    <div align="right">
+        <form>
+            <button formaction="http://127.0.0.1:5000/">Home</a></button>
+        </form>
+        <form>
+            <button formaction="http://127.0.0.1:5000/contact_us" target="_blank">Contact Us</a></button>
+        </form>
+    </div>
+</nav>
+<section>
+    <img src="/static/group_of_minions.jpg" style="float:right; margin-right:10px;
+    width=400px; border:none; border-radius: 25px;" alt="A group of fun loving minions">
+    <div class=myDiv>
+    We're part of Sky's Get into Tech, London Cohort - January 2021.
+    <br>
+    Our group consists of five software developers...in training.
+            <ol>
+                <li>Asia</li>
+                <li>Faridah</li>
+                <li>Michelle</li>
+                <li>Sanele</li>
+                <li>Tasnim</li>
+            </ol>
+    </div>
+</section>
+<aside align="left">
+    <div>
+        Our interests include:
+            <ul>
+                <li>Python programming</li>
+                <li>Using JavaScript and React</li>
+                <li>Version control mastery</li>
+                <li>YouTube video cataloging</li>
+                <li>Exchanging gifs</li>
+                <li>Machine learning</li>
+            </ul>
+    </div>
+</aside>
+<footer>For further information: girls@work.com
+    &nbsp; &copy; Sky Get into Tech, 2021
+    <a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark">
+</a>
+</footer>
+</body>
+<script
+    type="text/javascript"
+    async defer
+    src="//assets.pinterest.com/js/pinit.js">
+</script>
+{% endblock %}
